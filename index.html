@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Comintern prpject(beta)</title>
+   <link rel="stylesheet" href="css/style.min.css">
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body>
+   <div class="wrapper">
+      <section class="calc">
+         <div class="container">
+            <div class="calc__header-title">
+               Расчет площади по количеству сотрудников
+            </div><!--/calc__header-title-->
+            <div class="advan calc__advan">
+               <div class="advan__item ad-block">
+                  <h3 class="ad-block__h3">Общее кол-во сотрудников</h3>
+                  <div class="ad-block__wrapper">
+                     <div class="ad-block__inp number">
+                        <button name="in" class="number-minus" type="button"><span class="material-icons">
+                              remove
+                           </span></button>
+                        <input type="number" min="0" value="1" readonly>
+                        <button name="in" class="number-plus" type="button"><span class="material-icons">
+                              add
+                           </span></button>
+                     </div>
+                     <img class="calc__img" src="img/secone-item-img.png" alt="" height="200px">
+                  </div>
+               </div>
+               <div class="advan__item ad-block">
+                  <h3 class="ad-block__h3"> Отдельных кабинетов
+                  </h3>
+                  <div class="ad-block__wrapper">
+                     <div class="ad-block__out output ">
+                        <div class="output__text">0</div>
+                     </div>
+                     <img class="calc__img" src="img/secone-item-img.png" alt="" height="200px">
+                  </div>
+               </div>
+               <div class="advan__item ad-block">
+                  <h3 class="ad-block__h3">Переговорные комнаты</h3>
+                  <div class="ad-block__wrapper">
+                     <div class="ad-block__out output ">
+                        <div class="output__text">0</div>
+                     </div>
+                     <img class="calc__img" src="img/secone-item-img.png" alt="" height="200px">
+                  </div>
+               </div>
+            </div><!-- /advan -->
+            <div class="betwenn-text">Выберите 1 или несколько вариантов, укажите кол-во по каждому</div>
+            <div data-menu="0" class="advan-menu">
+               <div class="advan-menu__wrapper">
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button">
+                              <span class="material-icons">
+                                 add
+                              </span>
+                           </button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Средняя переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Большая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div><!-- /advan -->
+            <div data-menu="1" style="display: none;" class="advan-menu">
+
+               <div class="advan-menu__wrapper">
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div><!-- /advan -->
+            <div data-menu="2" style="display: none;" class="advan-menu">
+               <div class="advan-menu__wrapper">
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+                  <div class="advan-menu__item menu-block">
+                     <div class="menu-block__header-box">
+                        <h3 class="menu-block__title">Маленькая переговорная</h3>
+                        <span class="material-icons">
+                           help_outline
+                        </span>
+                     </div>
+                     <div class="menu-block__wrapper">
+                        <div class="menu-block__inp number">
+                           <button name="in" class="number-minus" type="button"><span class="material-icons">
+                                 remove
+                              </span></button>
+                           <input type="number" min="0" value="1" readonly>
+                           <button name="in" class="number-plus" type="button"><span class="material-icons">
+                                 add
+                              </span></button>
+                        </div>
+                        <img class="calc__img" src="img/secone-item-img.png" alt="">
+                     </div>
+                  </div>
+               </div>
+            </div><!-- /advan -->
+         </div>
+      </section>
+      <section class="info">
+         <div class="container">
+            <div class="info__container">
+               <div class="info__left-block left-block">
+                  <div class="left-block__title-box">
+                     <div class="left-block__title">
+                        Вам подойдет офис площадью не менее
+                     </div>
+                     <div class="left-block__info">
+                        260 м2
+                     </div>
+                  </div>
+                  <div class="left-block__title-sup-box">
+                     <div class="left-block__title-sup">
+                        Ориентировоная стоимость комплектации офиса мебелью под ключ составит:
+                     </div>
+                  </div>
+               </div>
+               <hr class="info__hr">
+               <div class="info__right-block right-block">
+                  <div class="right-block__wrapper">
+                     <button class="right-block__button"><span>Эконом</span> <span class="price">400.000</span></button>
+                     <button class="right-block__button"><span>Бизнес</span> <span class="price">
+                           800.000</span></button>
+                     <button class="right-block__button"><span>Премиум</span> <span class="price">
+                           1.300.000</span></button>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="additional">
+         <div class="container">
+            <div class="additional__container">
+               <div class="additional__button-box">
+                  <button class="additional__button-first">Заказать мебель</button>
+               </div>
+               <div class="form-group">
+                  <div class="dropdown">
+                     <button class="dropdown__button">Дополнительные параметры</button>
+                     <ul class="dropdown__list">
+                        <li class="dropdown__list-item" data-value="travel">Кладовая</li>
+                        <li class="dropdown__list-item" data-value="lessons">Кухня</li>
+                        <li class="dropdown__list-item" data-value="photo">Свободного назначения</li>
+                     </ul>
+                     <input type="text" name="select-category" value="" class="dropdown__input-hidden">
+                  </div>
+               </div>
+               <div class="additional__button-box">
+                  <button class="additional__button-last">Заказать мебель</button>
+                  <div class="additional__sup-title">Заказать план рассадку офиса <br> бесплатно</div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </div>
+   <script src="js/script.js"></script>
+</body>
+
+</html>
